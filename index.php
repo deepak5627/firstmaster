@@ -46,10 +46,15 @@
 			var row = $( ".row" ).val();
 			var col = $( ".column" ).val();
 
-			var squares = row * col ; 
-			for(var i=1;i<=squares;i++){
-				var element = $("<div class='inner'></div>");
-				element.appendTo('.outer');	
+			//var squares = row * col ; 
+			for(var i=1;i<=row;i++){
+				for(var j=1;j<=col;j++){
+					var element = $("<div class='inner'></div>");
+					element.appendTo('.outer');	
+				}
+				var breakadd = $("</br>");
+				breakadd.appendTo('.outer');	
+
 			}
 			
 		});
